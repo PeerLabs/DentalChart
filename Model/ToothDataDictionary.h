@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "../Dependencies/SvgToBezier.h"
+
 
 @interface ToothDataDictionary : NSObject
 
