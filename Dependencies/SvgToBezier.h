@@ -24,8 +24,9 @@
     NSMutableArray  *tokens;
 }
 
-@property(nonatomic, readonly) UIBezierPath *bezier;
-@property(nonatomic, readonly) float pathScale;
+@property (nonatomic, readonly) UIBezierPath *bezier;
+@property (nonatomic, readonly) float pathScale;
+@property (nonatomic, readonly) CGRect viewBox;
 
 - (id)initFromSVGPathNodeDAttr:(NSString *)attr rect:(CGRect)rect;
 

@@ -2,14 +2,16 @@
 //  ChartView.h
 //  DentalChart
 //
-//  Created by Abrar Peer on 3/28/12.
+//  Created by Abrar Peer on 6/07/12.
 //  Copyright (c) 2012 PeerLabs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "Model/ToothButton.h"
-
 
 @interface ChartView : UIView
+
+- (void) debugAddToothControlFromArray: (NSArray *) arrayToAdd;
+
+- (void) addToothControls;
 
 @end

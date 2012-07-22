@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "../Views/ChartView.h"
 
 @interface DentalChartViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet ChartView *chartView;
+
 
 @end

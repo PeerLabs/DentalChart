@@ -20,6 +20,12 @@
 		6B340AD215A317E700017E9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B340AB315A317E700017E9B /* Foundation.framework */; };
 		6B340ADA15A317E700017E9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B340AD815A317E700017E9B /* InfoPlist.strings */; };
 		6B340ADD15A317E700017E9B /* DentalChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B340ADC15A317E700017E9B /* DentalChartTests.m */; };
+		6B340AEE15A31AA100017E9B /* ToothDataDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B340AED15A31AA100017E9B /* ToothDataDictionary.m */; };
+		6B340AEF15A31AA100017E9B /* ToothDataDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B340AED15A31AA100017E9B /* ToothDataDictionary.m */; };
+		6B946E3315A5E45A00F7FEF7 /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B946E3215A5E45A00F7FEF7 /* ChartView.m */; };
+		6B946E5215A89A0200F7FEF7 /* ToothControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B946E5115A89A0200F7FEF7 /* ToothControl.m */; };
+		6BBEF1D815A45DB8009AD6B9 /* SvgToBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBEF1D715A45DB8009AD6B9 /* SvgToBezier.m */; };
+		6BBEF1D915A45DB8009AD6B9 /* SvgToBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBEF1D715A45DB8009AD6B9 /* SvgToBezier.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,14 @@
 		6B340AD915A317E700017E9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6B340ADB15A317E700017E9B /* DentalChartTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DentalChartTests.h; sourceTree = "<group>"; };
 		6B340ADC15A317E700017E9B /* DentalChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DentalChartTests.m; sourceTree = "<group>"; };
+		6B340AEC15A31AA100017E9B /* ToothDataDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToothDataDictionary.h; path = Model/ToothDataDictionary.h; sourceTree = "<group>"; };
+		6B340AED15A31AA100017E9B /* ToothDataDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToothDataDictionary.m; path = Model/ToothDataDictionary.m; sourceTree = "<group>"; };
+		6B946E3115A5E45A00F7FEF7 /* ChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChartView.h; path = Views/ChartView.h; sourceTree = "<group>"; };
+		6B946E3215A5E45A00F7FEF7 /* ChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChartView.m; path = Views/ChartView.m; sourceTree = "<group>"; };
+		6B946E5015A89A0200F7FEF7 /* ToothControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToothControl.h; path = Views/ToothControl.h; sourceTree = "<group>"; };
+		6B946E5115A89A0200F7FEF7 /* ToothControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToothControl.m; path = Views/ToothControl.m; sourceTree = "<group>"; };
+		6BBEF1D615A45DB8009AD6B9 /* SvgToBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SvgToBezier.h; path = Dependencies/SvgToBezier.h; sourceTree = "<group>"; };
+		6BBEF1D715A45DB8009AD6B9 /* SvgToBezier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SvgToBezier.m; path = Dependencies/SvgToBezier.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,9 @@
 		6B340AA215A317E700017E9B = {
 			isa = PBXGroup;
 			children = (
+				6BBEF1D415A45D95009AD6B9 /* Dependencies */,
+				6B946E3515A5E46000F7FEF7 /* Views */,
+				6B340AEA15A31A5A00017E9B /* Model */,
 				6B340AB715A317E700017E9B /* DentalChart */,
 				6B340AD515A317E700017E9B /* DentalChartTests */,
 				6B340AB015A317E700017E9B /* Frameworks */,
@@ -149,6 +166,35 @@
 				6B340AD815A317E700017E9B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B340AEA15A31A5A00017E9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B340AEC15A31AA100017E9B /* ToothDataDictionary.h */,
+				6B340AED15A31AA100017E9B /* ToothDataDictionary.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6B946E3515A5E46000F7FEF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B946E3115A5E45A00F7FEF7 /* ChartView.h */,
+				6B946E3215A5E45A00F7FEF7 /* ChartView.m */,
+				6B946E5015A89A0200F7FEF7 /* ToothControl.h */,
+				6B946E5115A89A0200F7FEF7 /* ToothControl.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6BBEF1D415A45D95009AD6B9 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				6BBEF1D615A45DB8009AD6B9 /* SvgToBezier.h */,
+				6BBEF1D715A45DB8009AD6B9 /* SvgToBezier.m */,
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +308,10 @@
 				6B340ABE15A317E700017E9B /* main.m in Sources */,
 				6B340AC215A317E700017E9B /* DentalChartAppDelegate.m in Sources */,
 				6B340AC815A317E700017E9B /* DentalChartViewController.m in Sources */,
+				6B340AEE15A31AA100017E9B /* ToothDataDictionary.m in Sources */,
+				6BBEF1D815A45DB8009AD6B9 /* SvgToBezier.m in Sources */,
+				6B946E3315A5E45A00F7FEF7 /* ChartView.m in Sources */,
+				6B946E5215A89A0200F7FEF7 /* ToothControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B340ADD15A317E700017E9B /* DentalChartTests.m in Sources */,
+				6B340AEF15A31AA100017E9B /* ToothDataDictionary.m in Sources */,
+				6BBEF1D915A45DB8009AD6B9 /* SvgToBezier.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +485,7 @@
 				6B340AE215A317E700017E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B340AE315A317E700017E9B /* Build configuration list for PBXNativeTarget "DentalChartTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +494,7 @@
 				6B340AE515A317E700017E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

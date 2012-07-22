@@ -89,6 +89,8 @@ unichar const invalidCommand		= '*';
 
 @synthesize bezier;
 @synthesize pathScale;
+@synthesize viewBox;
+
 
 - (id)initFromSVGPathNodeDAttr:(NSString *)attr rect:(CGRect)rect
 {
